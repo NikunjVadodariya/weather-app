@@ -4,6 +4,8 @@ const hbs  = require("hbs")
 const forecast = require("./utils/forecast")
 const geoCode = require("./utils/geocode")
 
+const port = process.env.PORT || 3000
+
 
 // console.log(__dirname, __filename)
 console.log(path.join(__dirname, "../", "public"))
