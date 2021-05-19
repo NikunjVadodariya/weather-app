@@ -20,7 +20,8 @@ weather_form.addEventListener("click", (event) => {
     console.log(serch.value)
     message.textContent = "Loading"
     error.textContent= "";
-    const url = "http://localhost:3000/weather?address=" + serch.value
+    // const url = "http://localhost:3000/weather?address=" + serch.value
+    const url = "/weather?address=" + serch.value
     fetch(url).then((response) => {
         response.json().then((data) =>{
             if(data.error){

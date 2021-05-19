@@ -91,6 +91,6 @@ app.get("*", (req, res) => {    // home page
     res.render("error", { title: "Error", error: "Page not found"})
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log("Server is up")
 })
